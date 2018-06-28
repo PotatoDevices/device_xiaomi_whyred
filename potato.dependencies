@@ -1,0 +1,11 @@
+[
+  {
+    "repository": "akhilnarang/whyred",
+    "target_path": "kernel/xiaomi/sdm660",
+    "branch": "oreo-mr1"
+  },
+  {
+    "repository": "vendor_xiaomi",
+    "target_path": "vendor/xiaomi"
+  }
+]
