@@ -151,6 +151,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.period_multiplier=3 \
     vendor.audio.adm.buffering.ms=2
 
+# Enable backpressure for GL comp
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_gl_backpressure=1
+
 # VoLTE/IMS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.ims_volte_enable=1 \
