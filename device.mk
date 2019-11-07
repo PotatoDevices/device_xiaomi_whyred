@@ -152,7 +152,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
     libxml2 \
-    libMiWatermark_shim \
     Snap
 
 # CNE
@@ -395,6 +394,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service
+
+# Shims
+PRODUCT_PACKAGES += \
+    imsvideocodec_shim \
+    libMiWatermark_shim
 
 # Telephony
 PRODUCT_PACKAGES += \

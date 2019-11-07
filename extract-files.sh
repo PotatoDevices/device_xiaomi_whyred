@@ -75,4 +75,6 @@ patchelf --add-needed libprocessgroup.so "$BLOB_ROOT"/vendor/lib64/hw/sound_trig
 
 patchelf --replace-needed libMiWatermark.so libMiWatermark_shim.so "$BLOB_ROOT"/vendor/lib/hw/camera.sdm660.so
 
+patchelf --add-needed imsvideocodec_shim.so "$BLOB_ROOT"/lib64/lib-imsvideocodec.so
+
 "$MY_DIR"/setup-makefiles.sh
