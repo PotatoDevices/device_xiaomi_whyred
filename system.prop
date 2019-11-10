@@ -297,6 +297,3 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 
 #prefer HW codec over SW for thumbnail
 media.stagefright.thumbnail.prefer_hw_codecs=true
-
-# Maintainer
-ro.mk.maintainer=guaiyihu
