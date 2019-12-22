@@ -403,6 +403,11 @@ PRODUCT_PACKAGES += \
     imsvideocodec_shim \
     libMiWatermark_shim
 
+# Soong
+PRODUCT_BOARD_PLATFORM := sdm660
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext

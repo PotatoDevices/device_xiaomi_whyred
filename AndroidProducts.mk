@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_whyred.mk
+    $(LOCAL_DIR)/potato_whyred.mk
