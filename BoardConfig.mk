@@ -23,9 +23,6 @@
 
 DEVICE_PATH := device/xiaomi/whyred
 
-# Build broken phony targets
-BUILD_BROKEN_PHONY_TARGETS := true
-
 # Compile libhwui in performance mode
 HWUI_COMPILE_FOR_PERF := true
 
