@@ -48,7 +48,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.parser.ip.buffer.size=262144 \
     vendor.audio.flac.sw.decoder.24bit=true \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
+		persist.bluetooth.a2dp_offload.cap=sbc-aptx-aptxhd-aac \
     vendor.audio.use.sw.alac.decoder=true \
+		ro.vendor.bluetooth.wipower=false \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio.hw.aac.encoder=true \
     vendor.fm.a2dp.conc.disabled=true \
@@ -65,7 +67,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sdk.sensors.gestures=false \
     rild.libpath=/system/vendor/lib64/libril-qc-hal-qmi.so \
     sys.autosuspend.timeout=500000 \
-    drm.service.enabled=true 
+    drm.service.enabled=true
 
 # Enable headset calibration
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -153,7 +155,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
-    vendor.audio.adm.buffering.ms=2
+    vendor.audio.adm.buffering.ms=12
 
 # Enable backpressure for GL comp
 PRODUCT_PROPERTY_OVERRIDES += \
