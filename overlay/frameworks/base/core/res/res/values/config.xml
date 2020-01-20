@@ -211,10 +211,10 @@
     <!-- Whether camera shutter sound is forced or not  (country specific). -->
     <bool name="config_camera_sound_forced">false</bool>
 
-    <!-- Configuration to enable non-default PDP during IWLAN 
+    <!-- Configuration to enable non-default PDP during IWLAN
     <bool name="config_feature_iwlan_enabled">true</bool> -->
 
-    <!-- Is the device capable of supporting digital pen 
+    <!-- Is the device capable of supporting digital pen
     <bool name="config_digitalPenCapable">true</bool> -->
 
     <!-- Flag specifying whether VoLTE, VT and WFC is available on device -->
@@ -554,20 +554,20 @@
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>28</item>
+        <item>7</item>
         <item>10</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>28</item>
+        <item>5</item>
         <item>10</item>
     </integer-array>
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
-        <item>28</item>
+        <item>10</item>
     </integer-array>
 
     <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
@@ -583,7 +583,7 @@
 
     <!-- True if the firmware supports connected MAC randomization -->
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
-	
+
     <!-- Disable rounded corners on windows to improve graphics performance -->
     <bool name="config_supportsRoundedCornersOnWindows">false</bool>
 </resources>
