@@ -249,7 +249,7 @@ on boot
 
     # Create pa-cal driver directory lct-20180914
     mkdir /mnt/vendor/persist/audio 0770 root root
-    
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -309,10 +309,6 @@ on post-fs-data
     #create netmgr log dir
     mkdir /data/vendor/netmgr 0770 radio radio
     chmod 0770 /data/vendor/netmgr
-    
-    #create ipacm log dir
-    mkdir /data/vendor/ipa 0770 radio radio
-    chmod 0770 /data/vendor/ipa
 
     #create ipacm log dir
     mkdir /data/vendor/ipa 0770 radio radio
