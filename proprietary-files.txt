@@ -33,16 +33,18 @@ vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
-# Alarm - from lavender-user-9-PKQ1.180904.001-V10.3.6.0.PFGMIXM
--vendor/app/PowerOffAlarm/PowerOffAlarm.apk|d5b3fcb75c1a27acf7f3ddbd7029d56f0b66c724
-framework/vendor.qti.hardware.alarm-V1.0-java.jar|7ef3726eca6455545a729cc56b54c796e9cf0210
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|1300f2aacbcd159a2587abc1f38031d9c1f1beed
-vendor/bin/power_off_alarm|f973dabbdba85ece5115d4beb457cb37887e4358
+# Alarm - from lavender-user-10-QKQ1.190910.002-20.1.21-release-keys
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|d5b3fcb75c1a27acf7f3ddbd7029d56f0b66c724
+product/framework/vendor.qti.hardware.alarm-V1.0-java.jar|69dedc62181ae26bb2fac4eaacb1f2c38eb21c31
+product/lib64/vendor.qti.hardware.alarm@1.0.so|78f8db9acff8b3461d6d37c747b1bdb59e547bb5
+product/lib/vendor.qti.hardware.alarm@1.0.so|ae43ab60018d7b158640e7d51b04d1c73744a3e6
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|faccc2a7d94d486c2f61a5fe85f5c4598b4147a7
+vendor/bin/power_off_alarm|9f800336a28ad1ad111f164b8c779313cddc98c1
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|7d163c35a9deee2801070ed50c6625709c3e0b65
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so|8c978663c6d9dc4b96a11abc57f3ad1c5ee4d3b8
-vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so|0b6cfa8af4a0a056f9f4d57b53df07d0cdf0c982
-vendor/lib/vendor.qti.hardware.alarm@1.0.so|02b00f3bbc5d975c64be191ac1dd8765a564f6df
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|1e2631850cc97dfedbde50a9d0d55c8d14881b44
+vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so|b845126ef761d77dcbef9bff3bcd5f89f700780b
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|271f85f1c6dc0c65dc3aa9a8603f3910fa50e1ea
+vendor/lib/vendor.qti.hardware.alarm@1.0.so|f69dbdc1a9c732490e2cd6a5c49a590193cca9db
 
 # ANT+ (system) - from enchilada - PKQ1.180716.001
 lib/com.qualcomm.qti.ant@1.0.so|fcd6a7130c480bfe4e4d9cc00702ed8444cddc82
