@@ -118,6 +118,32 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.bluetooth.a2dp_offload.cap=sbc-aptx-aptxhd-aac \
     ro.vendor.bluetooth.wipower=false
 
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.camera.preview.ubwc=0 \
+    persist.vendor.camera.stats.test=0 \
+    persist.vendor.camera.depth.focus.cb=0 \
+    persist.vendor.camera.isp.clock.optmz=0 \
+    persist.vendor.camera.linkpreview=0 \
+    persist.vendor.camera.isp.turbo=1 \
+    persist.vendor.camera.exif.make=Xiaomi \
+    persist.vendor.camera.exif.model=Redmi Note 5 \
+    persist.vendor.camera.expose.aux=1 \
+    persist.vendor.camera.fdvideo=1 \
+    persist.vendor.camera.awb.sync=2 \
+    persist.vendor.flash.low.lux=390 \
+    persist.vendor.flash.light.lux=340 \
+    persist.vendor.imx376_ofilm.low.lux=310 \
+    persist.vendor.imx376_ofilm.light.lux=280 \
+    persist.vendor.imx376_sunny.low.lux=310 \
+    persist.vendor.imx376_sunny.light.lux=280 \
+    persist.vendor.ov13855_sunny.low.lux=385 \
+    persist.vendor.ov13855_sunny.light.lux=370 \
+    persist.vendor.s5k3l8_ofilm.low.lux=379 \
+    persist.vendor.s5k3l8_ofilm.light.lux=367 \
+    persist.vendor.camera.HAL3.enabled=1 \
+    persist.vendor.camera.ltm.overlap=13
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
