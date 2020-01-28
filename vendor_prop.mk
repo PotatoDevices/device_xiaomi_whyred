@@ -37,8 +37,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # (audio) FM
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.hw.fm.init=0 \
-    vendor.fm.a2dp.conc.disabled=true \
-    vendor.audio.feature.fm.enable=true
+    vendor.fm.a2dp.conc.disabled=true 
 
 # (audio) Enable headset calibration
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -49,7 +48,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.a2dp_offload.enable=false \
     vendor.audio.feature.afe_proxy.enable=true \
     vendor.audio.feature.anc_headset.enable=true \
-    vendor.audio.feature.audio_sphere.enable=true \
     vendor.audio.feature.battery_listener.enable=false \
     vendor.audio.feature.compr_cap.enable=false \
     vendor.audio.feature.compress_in.enable=false \
@@ -65,12 +63,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.external_speaker.enable=false \
     vendor.audio.feature.external_speaker_tfa.enable=false \
     vendor.audio.feature.fluence.enable=true \
+    vendor.audio.feature.fm.enable=true \
     vendor.audio.feature.hdmi_edid.enable=true \
     vendor.audio.feature.hdmi_passthrough.enable=true \
     vendor.audio.feature.hfp.enable=true \
     vendor.audio.feature.hifi_audio.enable=true \
     vendor.audio.feature.hwdep_cal.enable=false \
-    vendor.audio.feature.incall_music.enable=false \
+    vendor.audio.feature.incall_music.enable=true \
     vendor.audio.feature.multi_voice_session.enable=true \
     vendor.audio.feature.keep_alive.enable=false \
     vendor.audio.feature.kpi_optimize.enable=true \
@@ -79,7 +78,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.record_play_concurency.enable=false \
     vendor.audio.feature.src_trkn.enable=true \
     vendor.audio.feature.spkr_prot.enable=true \
-    vendor.audio.feature.ssrec.enable=false \
+    vendor.audio.feature.ssrec.enable=true \
     vendor.audio.feature.usb_offload.enable=true \
     vendor.audio.feature.usb_offload_burst_mode.enable=false \
     vendor.audio.feature.usb_offload_sidetone_volume.enable=false \
@@ -87,7 +86,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.vbat.enable=true \
     vendor.audio.feature.wsa.enable=false \
     vendor.audio.feature.audiozoom.enable=false \
-    vendor.audio.feature.snd_mon.enable=false
+    vendor.audio.feature.snd_mon.enable=true
 
 # (audio) Enable dualmic fluence for voice communication
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -114,8 +113,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # (bt) Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee \
+    ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
-	persist.bluetooth.a2dp_offload.cap=sbc-aptx-aptxhd-aac \
+	persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     ro.vendor.bluetooth.wipower=false
 
 # Camera
