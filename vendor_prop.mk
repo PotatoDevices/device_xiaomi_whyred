@@ -1,42 +1,3 @@
-# Misc
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.job_delay=true \
-    persist.sys.mcd_config_file=/system/etc/mcd_default.conf \
-    vendor.video.disable.ubwc=1 \
-    persist.vendor.qcomsysd.enabled=1 \
-    sys.autosuspend.timeout=500000 \
-
-# NTP
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.backup.ntpServer=0.pool.ntp.org \
-
-# NFC
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.nfc_nci=nqx.default \
-
-# FRP
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.frp.pst=/dev/block/bootdevice/by-name/frp \
-
-# QTI 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=libqti-perfd-client.so \
-
-# DRM
-PRODUCT_PROPERTY_OVERRIDES += \
-    drm.service.enabled=true
-
-# Shutdown
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.vendor.shutdown.waittime=500 \
-    ro.build.shutdown_timeout=0
-
-# Sensors
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.sensors.facing=false \
-    ro.vendor.sensors.cmc=false \
-    ro.vendor.sdk.sensors.gestures=false
-
 # (audio) MIUI / Misc
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
@@ -146,33 +107,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.hw.binder.size_kbyte=1024
 
-# (media) Media
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.stagefright.omx_default_rank.sw-audio=1 \
-    debug.stagefright.omx_default_rank=0
-
-# (media) Codec2 switch
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.media.codec2=2
-
-# (ril) VoLTE/IMS
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.ims_volte_enable=1 \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.radio.aosp_usr_pref_sel=true \
-    persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.data_ltd_sys_ind=1 \
-    persist.vendor.radio.procedure_bytes=SKIP \
-    persist.radio.calls.on.ims=1 \
-    persist.radio.multisim.config=dsds \
-    persist.vendor.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.sib16_support=1 \
-    persist.vendor.radio.custom_ecc=1 \
-    persist.vendor.radio.rat_on=combine \
-    persist.dbg.wfc_avail_ovr=1 \
-    rild.libpath=/system/vendor/lib64/libril-qc-hal-qmi.so \
-
 # (bt) Enable AAC frame ctl for A2DP sinks
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.aac_frm_ctl.enabled=true
@@ -193,6 +127,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=8m \
     dalvik.vm.heapmaxfree=16m \
     ro.dalvik.vm.native.bridge=0
+
+# DRM
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
+
+# FRP
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.frp.pst=/dev/block/bootdevice/by-name/frp \
 
 # (graphics) SurfaceFlinger 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -225,3 +167,65 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # (graphics) Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
+
+# Misc
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.job_delay=true \
+    persist.sys.mcd_config_file=/system/etc/mcd_default.conf \
+    vendor.video.disable.ubwc=1 \
+    persist.vendor.qcomsysd.enabled=1 \
+    sys.autosuspend.timeout=500000 \
+
+# NTP
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.backup.ntpServer=0.pool.ntp.org \
+
+# (media) Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0
+
+# (media) Codec2 switch
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.media.codec2=2
+
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.nfc_nci=nqx.default \
+
+# QTI 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=libqti-perfd-client.so \
+
+# (ril) VoLTE/IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.radio.aosp_usr_pref_sel=true \
+    persist.vendor.radio.rat_on=combine \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
+    persist.vendor.radio.procedure_bytes=SKIP \
+    persist.radio.calls.on.ims=1 \
+    persist.radio.multisim.config=dsds \
+    persist.vendor.radio.apm_sim_not_pwdn=1 \
+    persist.vendor.radio.sib16_support=1 \
+    persist.vendor.radio.custom_ecc=1 \
+    persist.vendor.radio.rat_on=combine \
+    persist.dbg.wfc_avail_ovr=1 \
+    rild.libpath=/system/vendor/lib64/libril-qc-hal-qmi.so \
+
+# Sensors
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.sensors.facing=false \
+    ro.vendor.sensors.cmc=false \
+    ro.vendor.sdk.sensors.gestures=false \
+    ro.vendor.sensors.dev_ori=true \
+    ro.vendor.sensors.pmd=true \
+    ro.vendor.sensors.sta_detect=true \
+    ro.vendor.sensors.mot_detect=true 
+
+# Shutdown
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.vendor.shutdown.waittime=500 \
+    ro.build.shutdown_timeout=0
