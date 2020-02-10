@@ -195,22 +195,9 @@ persist.vendor.radio.data_con_rprt=1
 #add colorInvert
 ro.vendor.df.effect.conflict=1
 persist.sys.df.extcolor.proc=0
-#paper mode
-sys.paper_mode_max_level=32
-sys.tianma_td4310_offset=5
-sys.tianma_td4310_length=55
-sys.shenchao_td4310_offset=-2
-sys.shenchao_td4310_length=45
-sys.tianma_nt36672_offset=2
-sys.tianma_nt36672_length=45
-sys.huaxing_nt36672_offset=2
-sys.huaxing_nt36672_length=44
 
 #enable all system restart_level to relative
 persist.vendor.ssr.restart_level=ALL_ENABLE
-
-#thermal configs path
-sys.thermal.data.path=/data/vendor/thermal/
 
 #lct liuxuan add the dom ignore time
 persist.vendor.radio.ignore_dom_time=15
