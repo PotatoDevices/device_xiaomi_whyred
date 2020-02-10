@@ -188,20 +188,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_app_phase_offset_ns=1500000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.early_gl_app_phase_offset_ns=15000000
-
-# (graphics) Rendering
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.enable.sglscale=1 \
-    debug.egl.hw=1 \
-    debug.sf.disable_hwc=0 \
-    debug.sf.recomputecrop=0 \
-    persist.hwc.ptor.enable=true \
-    debug.sf.gpu_comp_tiling=1
-
-# (graphics) Enable backpressure for GL comp
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_gl_backpressure=1
-
+    
 # (graphics) Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
