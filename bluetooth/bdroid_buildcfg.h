@@ -19,8 +19,7 @@
  * limitations under the License.
  */
 
-#ifndef _BDROID_BUILDCFG_H
-#define _BDROID_BUILDCFG_H
+#pragma once
 
 #pragma push_macro("PROPERTY_VALUE_MAX")
 
@@ -54,5 +53,3 @@ static inline const char* BtmGetDefaultName()
 #define AVDT_NUM_SEPS 12
 
 #pragma pop_macro("PROPERTY_VALUE_MAX")
-
-#endif
