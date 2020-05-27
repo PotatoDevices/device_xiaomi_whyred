@@ -25,7 +25,6 @@
 #define LEDS            "/sys/class/leds/"
 
 #define LCD_LED         LEDS "lcd-backlight/"
-#define WHITE_LED       LEDS "red/"
 
 #define BLINK           "blink"
 #define BRIGHTNESS      "brightness"
@@ -138,11 +137,22 @@ static std::string getScaledRamp(uint32_t brightness) {
     return ramp;
 }
 
+static bool is_white() {
+    std::ifstream fin("/sys/class/leds/white/brightness");
+    return fin.good();
+}
+
 static void handleNotification(const LightState& state) {
-    uint32_t whiteBrightness = getScaledBrightness(state, getMaxBrightness(WHITE_LED MAX_BRIGHTNESS));
+
+    std::string WHITE_LED = "/sys/class/leds/red/";
+
+    if(is_white())
+        WHITE_LED = "/sys/class/leds/white/";
+
+    uint32_t whiteBrightness = getScaledBrightness(state, getMaxBrightness(WHITE_LED + MAX_BRIGHTNESS));
 
     /* Disable blinking */
-    set(WHITE_LED BLINK, 0);
+    set(WHITE_LED + BLINK, 0);
 
     if (state.flashMode == Flash::TIMED) {
         /*
@@ -160,16 +170,16 @@ static void handleNotification(const LightState& state) {
         }
 
         /* White */
-        set(WHITE_LED START_IDX, 0 * RAMP_STEPS);
-        set(WHITE_LED DUTY_PCTS, getScaledRamp(whiteBrightness));
-        set(WHITE_LED PAUSE_LO, pauseLo);
-        set(WHITE_LED PAUSE_HI, pauseHi);
-        set(WHITE_LED RAMP_STEP_MS, stepDuration);
+        set(WHITE_LED + START_IDX, 0 * RAMP_STEPS);
+        set(WHITE_LED + DUTY_PCTS, getScaledRamp(whiteBrightness));
+        set(WHITE_LED + PAUSE_LO, pauseLo);
+        set(WHITE_LED + PAUSE_HI, pauseHi);
+        set(WHITE_LED + RAMP_STEP_MS, stepDuration);
 
         /* Enable blinking */
-        set(WHITE_LED BLINK, 1);
+        set(WHITE_LED + BLINK, 1);
     } else {
-        set(WHITE_LED BRIGHTNESS, whiteBrightness);
+        set(WHITE_LED + BRIGHTNESS, whiteBrightness);
     }
 }
 
