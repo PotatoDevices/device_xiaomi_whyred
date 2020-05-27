@@ -60,7 +60,7 @@ static void init_setup_model_properties()
 {
     std::ifstream fin("/proc/cmdline");
     std::string buf;
-    std::getline(fin, buf, ' ');
+    std::getline(fin, buf);
     fin.close();
 
     if (buf.find("India") != std::string::npos)
