@@ -58,21 +58,13 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 
 static void init_setup_model_properties()
 {
-    std::ifstream fin;
+    std::ifstream fin("/proc/cmdline");
     std::string buf;
-
-    fin.open("/proc/cmdline");
-    while (std::getline(fin, buf, ' '))
-        if (buf.find("androidboot.hwc") != std::string::npos)
-            break;
-
-    if (buf.find("India") != std::string::npos) {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi Note 5 Pro");
-    } else {
-        property_override_dual("ro.product.model", "ro.vendor.product.model",  "Redmi Note 5");
-    }
-
+    std::getline(fin, buf, ' ');
     fin.close();
+
+    if (buf.find("India") != std::string::npos)
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi Note 5 Pro");
 }
 
 void vendor_load_properties()
