@@ -357,11 +357,11 @@
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="ENABLE" />
 
-    <ctl name="RX1 Digital Volume" value="84" />
-    <ctl name="RX2 Digital Volume" value="84" />
-    <ctl name="RX3 Digital Volume" value="84" />
-    <ctl name="RX4 Digital Volume" value="84" />
-    <ctl name="RX5 Digital Volume" value="84" />
+    <ctl name="RX1 Digital Volume" value="93" />
+    <ctl name="RX2 Digital Volume" value="93" />
+    <ctl name="RX3 Digital Volume" value="93" />
+    <ctl name="RX4 Digital Volume" value="93" />
+    <ctl name="RX5 Digital Volume" value="93" />
     <ctl name="ADC1 Volume" value="4" />
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
@@ -2015,7 +2015,7 @@
     	<ctl name="INT0_MI2S_RX SampleRate" value="KHZ_96" />
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RDAC2 MUX" value="RX1" />
-        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="RX1 Digital Volume" value="93" />
         <ctl name="EAR PA Gain" value="POS_4P5_DB" />
         <ctl name="EAR_S" value="Switch" />
     </path>
@@ -2136,14 +2136,14 @@
 
     <path name="headphones-ce">
         <path name="headphones" />
-        <ctl name="RX1 Digital Volume" value="74" />
-        <ctl name="RX2 Digital Volume" value="74" />
+        <ctl name="RX1 Digital Volume" value="93" />
+        <ctl name="RX2 Digital Volume" value="93" />
     </path>
 
     <path name="headphones-no-ce">
         <path name="headphones" />
-        <ctl name="RX1 Digital Volume" value="84" />
-        <ctl name="RX2 Digital Volume" value="84" />
+        <ctl name="RX1 Digital Volume" value="93" />
+        <ctl name="RX2 Digital Volume" value="93" />
     </path>
 
     <path name="headphones-karaoke">
