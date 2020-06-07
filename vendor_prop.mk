@@ -36,8 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # (audio) FM
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.hw.fm.init=0 \
-    vendor.fm.a2dp.conc.disabled=true 
+    vendor.hw.fm.init=0 
 
 # (audio) Enable headset calibration
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -45,7 +44,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # (audio) Add dynamic feature flags here
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.audio.feature.a2dp_offload.enable=false \
     vendor.audio.feature.afe_proxy.enable=true \
     vendor.audio.feature.anc_headset.enable=true \
     vendor.audio.feature.battery_listener.enable=false \
@@ -106,19 +104,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.hw.binder.size_kbyte=1024
 
-# (bt) Enable AAC frame ctl for A2DP sinks
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.bt.aac_frm_ctl.enabled=true
-
 # (bt) Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee \
-    ro.bluetooth.a2dp_offload.supported=false \
-    persist.bluetooth.a2dp_offload.disabled=true \
-    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
-	persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
-    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     ro.vendor.bluetooth.wipower=false
 
 # Camera
