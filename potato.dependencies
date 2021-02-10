@@ -1,14 +1,14 @@
 [
  {
-   "repository": "android_vendor_xiaomi_whyred",
+   "repository": "vendor_xiaomi_whyred",
    "target_path": "vendor/xiaomi/whyred"
  },
  {
-   "repository": "android_kernel_xiaomi_whyred",
+   "repository": "kernel_xiaomi_whyred",
    "target_path": "kernel/xiaomi/whyred"
  },
   {
-    "repository": "android_device_xiaomi_extras",
+    "repository": "ArrowOS-Devices/android_device_xiaomi_extras",
     "target_path": "device/xiaomi/extras"
   }
 ]
